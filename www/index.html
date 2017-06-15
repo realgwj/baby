@@ -1,46 +1,280 @@
 <!DOCTYPE html>
-<!--
-    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
-
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="msapplication-tap-highlight" content="no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-    </body>
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Happy Family Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<script src="js/jquery.min.js"></script>
+<!--start-smooth-scrolling-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!--start-smooth-scrolling-->
+</head>
+<body>
+	<!--banner-starts-->
+	<div class="banner" id="home">
+		<!--menu-->
+		<div class="header-info-right">
+				<div class="header cbp-spmenu-push">
+					<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+							<a href="index.html">Home</a>
+							<a href="healthcare.html">Health care</a>
+							<a href="advice.html">Advice</a>
+							<a href="typo.html">Typo</a>
+							<a href="gallery.html">Gallery</a>
+							<a href="contact.html">Contact</a>
+					</nav>
+					<!--script-nav -->	
+					<script>
+						$("span.menu").click(function(){
+							$("ul.navigatoin").slideToggle("300" , function(){
+							});
+						});
+					</script>
+					<script type="text/javascript">
+								jQuery(document).ready(function($) {
+									$(".scroll").click(function(event){		
+										event.preventDefault();
+										$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+									});
+								});
+					</script>
+					<div class="clearfix"> </div>
+						<!-- /script-nav -->
+									<div class="main">
+										<section class="buttonset">
+											<button id="showLeftPush"><img src="images/menu.png" /></button>
+										</section>
+									</div>
+									<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+									<script src="js/classie.js"></script>
+									<script>
+										var	menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+											showLeftPush = document.getElementById( 'showLeftPush' ),
+											body = document.body;
+							
+										showLeftPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toright' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				disableOther( 'showLeftPush' );
+			};
+									</script>
+				</div>
+			</div>	
+<!--//menu-->
+	<div class="hire">
+		<a href="contact.html">CONTACT US</a>
+	</div>
+	<div class="container">
+		<div class="logo">
+			<a href="index.html"><img src="images/logo-5.png" alt="" /></a>
+		</div>
+		<div class="banner-bottom">
+			<h1>Lovely Baby</h1>
+			<p> Father And mother i love you! thanks for giving me life!</p>
+			<a href="#welcome" class="scroll"><img src="images/arrow.png" alt="" /></a>
+		</div>
+	</div>
+	</div>
+	<!--banner-ends-->
+	<!--welcome-ends-->
+	<div class="welcome" id="welcome">
+		<div class="container">
+			<div class="welcome-main">
+				<div class="col-md-7 welcome-left heading">
+					<h2>The Baby Store at Amazon.com</h2>
+					<p>If you’re looking for the products you need to care for your little one, you’ve come to the right place. Whether you’re in search of nursery furniture before baby’s arrival, need a travel system, or want to get a walker, jumper, or swing for your newly active child, you can find it here.</p>
+					<div class="w-btn">
+						<a href="#">Read More</a>
+					</div>
+				</div>
+				<div class="col-md-5 welcome-right">
+					<img src="images/w-1.jpg" alt="" />
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>	
+	</div>
+	<!--welcome-ends-->
+   
+	<!--abt-starts-->
+	<div class="abt">
+		<div class="container">
+			<div class="abt-main heading">
+				<h3>Family Life, Knowledge & Understanding</h3>
+				<p>What do new moms and dads really want when it comes to baby gifts? Whether you're shopping for a friend or making up your own baby present wish list, we'll let you know which baby products are the biggest hits.</p>
+				<ul>
+				  <li><a href="#"><span class="hrt"></span></a></li>
+					<li><a href="#"><span class="clndr"></span></a></li>
+					<li><a href="#"><span class="umbrla"></span></a></li>
+				</ul>
+			</div>
+			<div class="abt-bottom">
+				<h4>Creative Ideas</h4>
+				<div class="abt-btm">
+					<div class="col-md-6 abt-left">
+						<p>What baby products are must-haves, and which ones can you skip? With the incredible array of baby strollers, cribs, toys, furniture, and clothes, how can you ever make up your mind? That's where we come in. Whether you're looking for the best baby gear or a baby gift for a friend, we have the information and guidance you need to choose baby products that are safe, useful, and stylish.</p>
+					</div>
+					<div class="col-md-6 abt-left">
+						<p> You'll find buying guides for baby products such as baby strollers, car seats, and baby furniture, including cribs and changing tables. We also have great ideas for gifts for newborns and moms and dads – from baby toys to diaper bags.</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--abt-ends-->
+	<!--future-starts-->
+	<div class="future">
+		<div class="container">
+			<div class="future-top heading">
+				<h3>Future Planning</h3>
+				<p>Your baby will enjoy soothing and entertainment from the first weeks of life through several years. At Walmart, we have a large selection of baby toys and entertainment items that'll help your little one interact with their environment.</p>
+			</div>
+		</div>
+		<div class="future-bottom">
+			<div class="col-md-6 future-left">
+				<a href="#" class="b-link-stripe b-animate-go  thickbox">
+					<img class="port-pic" class="img-responsive" src="images/f-2.jpg" />
+						<div class="b-wrapper">
+							<h2 class="b-animate b-from-left b-from   b-delay03 ">
+							<span>sociis natoque penatibus et magnis</span>
+							</h2>
+						</div>
+				</a>
+			</div>
+			<div class="col-md-3 future-left">
+				<a href="#" class="b-link-stripe b-animate-go  thickbox">
+					<img class="port-pic" class="img-responsive" src="images/f-3.jpg" />
+						<div class="b-wrapper">
+							<h2 class="b-animate b-from-left b-from   b-delay03 ">
+							<span>sociis natoque penatibus et magnis</span>
+							</h2>
+						</div>
+				</a>
+			</div>
+			<div class="col-md-3 future-left">
+				<a href="#" class="b-link-stripe b-animate-go  thickbox">
+					<img class="port-pic" class="img-responsive" src="images/f-4.jpg" />
+						<div class="b-wrapper">
+							<h2 class="b-animate b-from-left b-from   b-delay03 ">
+							<span>sociis natoque penatibus et magnis</span>
+							</h2>
+						</div>
+				</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<!--featured-ends-->
+	<!--free-ends-->
+	<div class="free">
+		<div class="container">
+			<div class="free-top">
+				<div class="col-md-4 free-left">
+					<img src="images/a-2.jpg" alt="" />
+				</div>
+				<div class="col-md-4 free-left free-right">
+					<h3>Get FREE ADVICE!<span>from family psychologist</span></h3>
+				</div>
+				<div class="col-md-4 free-left free-right">
+					<p>John Smith
+					<span>700 213 8029</span></p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--advice-ends-->
+	<!--services-start-->
+	<div class="process">
+		<div class="container">
+			<div class="process-top">
+				<div class="col-md-3 process-left">
+					<h3>01. <span>PREGNANCY</span></h3>
+					<img src="images/p-1.jpg" alt="" />
+					<p>DELIGHT</p>
+				</div>
+				<div class="col-md-3 process-left">
+					<h3>02. <span>NUTRITION</span></h3>
+					<img src="images/p-2.jpg" alt="" />
+					<p>FRESH</p>
+				</div>
+				<div class="col-md-3 process-left">
+					<h3>03. <span>CHILD CARE</span></h3>
+					<img src="images/p-3.jpg" alt="" />
+					<p>HAPPINESS</p>
+				</div>
+				<div class="col-md-3 process-left">
+					<h3>04. <span>PARENTING</span></h3>
+					<img src="images/p-4.jpg" alt="" />
+					<p>TRAVEL</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--services-ends-->
+	<!--footer-starts-->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-top">
+				<a href="index.html"><img src="images/logo-5.png" alt="" /></a>
+			</div>
+			<div class="footer-bottom">
+				<div class="col-md-4 footer-left heading">
+					<h3>Partners:</h3>
+                    <ul>
+                      <li><a href="#">Doris</a></li>
+                      <li><a href="#">Vivian</a></li>
+                      <li><a href="#">Robin</a></li>
+                      <li><a href="#">Edward</a></li>
+                    </ul>
+				</div>
+				
+			  <div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--footer-ends-->
+	<!--copy-starts-->
+	<div class="copy">
+		<div class="container">
+			<div class="copy-top">
+				<p class="footer-class">Copyright &copy; 2015.shuoxuedouchang</p>
+			</div>
+		</div>
+		<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
+	<!--copy-ends-->
+</body>
 </html>
